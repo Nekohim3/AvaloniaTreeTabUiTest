@@ -21,7 +21,7 @@ namespace AvaloniaTreeTabUiTest.ViewModels
 
         private void OnAnswers()
         {
-            TabViewControl.SwitchView(TabViewControl.Tree.Root);
+            //TabViewControl.SwitchView(TabViewControl.Tree.Root);
         }
     }
 }

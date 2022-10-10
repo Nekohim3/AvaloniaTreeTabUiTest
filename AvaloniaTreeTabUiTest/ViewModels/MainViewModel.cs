@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reactive;
 using System.Text;
 using System.Threading.Tasks;
+using AvaloniaTreeTabWindowManager.Utils.TabControl;
 using AvaloniaTreeTabWindowManager.ViewModels;
 using ReactiveUI;
 
