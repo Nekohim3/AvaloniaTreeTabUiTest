@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaTreeTabUiTest", "AvaloniaTreeTabUiTest\AvaloniaTreeTabUiTest.csproj", "{6CDAF9DF-5D5C-4F47-852F-40C1AFACAC6A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaUtils", "AvaloniaUtils\AvaloniaUtils\AvaloniaUtils.csproj", "{331BF065-8A0A-4FA2-8475-A3AF8B72CC36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaTreeTabWindowManager", "AvaloniaTreeTabWindowManager\AvaloniaTreeTabWindowManager\AvaloniaTreeTabWindowManager.csproj", "{8B258869-C56D-4788-8BED-94BBF74DC724}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6CDAF9DF-5D5C-4F47-852F-40C1AFACAC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CDAF9DF-5D5C-4F47-852F-40C1AFACAC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CDAF9DF-5D5C-4F47-852F-40C1AFACAC6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{331BF065-8A0A-4FA2-8475-A3AF8B72CC36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331BF065-8A0A-4FA2-8475-A3AF8B72CC36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331BF065-8A0A-4FA2-8475-A3AF8B72CC36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331BF065-8A0A-4FA2-8475-A3AF8B72CC36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B258869-C56D-4788-8BED-94BBF74DC724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B258869-C56D-4788-8BED-94BBF74DC724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B258869-C56D-4788-8BED-94BBF74DC724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B258869-C56D-4788-8BED-94BBF74DC724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

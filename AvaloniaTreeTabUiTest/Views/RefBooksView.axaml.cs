@@ -2,9 +2,9 @@ using Avalonia.Controls;
 
 namespace AvaloniaTreeTabUiTest.Views
 {
-    public partial class MainWindow : Window
+    public partial class RefBooksView : UserControl
     {
-        public MainWindow()
+        public RefBooksView()
         {
             InitializeComponent();
         }

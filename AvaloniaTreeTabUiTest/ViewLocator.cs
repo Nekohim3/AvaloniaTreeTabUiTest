@@ -2,6 +2,7 @@ using Avalonia.Controls;
 using Avalonia.Controls.Templates;
 using AvaloniaTreeTabUiTest.ViewModels;
 using System;
+using AvaloniaTreeTabWindowManager;
 
 namespace AvaloniaTreeTabUiTest
 {
