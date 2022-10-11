@@ -23,34 +23,43 @@ namespace AvaloniaTreeTabUiTest
 
         public override void OnFrameworkInitializationCompleted()
         {
-            //var lst = new ObservableCollectionWithSelectedItem<Test>(false);
-            //lst.Add(new Test("qwe"));
-            //lst.Add(new Test("asd"));
-            //lst.Add(new Test("zxc"));
-            //lst.Add(new Test("wer"));
-            //lst.Add(new Test("sdf"));
-            //lst.Add(new Test("xcv"));
-            //lst.Add(new Test("ert"));
-            //lst.Add(new Test("dfg"));
-            //lst.Add(new Test("cvb"));
-            //lst.SelectionChanging += LstOnSelectionChanging;
-            //lst.SelectionChanged += LstOnSelectionChanged;
+            var lst = new ObservableCollectionWithSelectedItem<Test>(true);
+            lst.Add(new Test("qwe"));
+            lst.Add(new Test("asd"));
+            lst.Add(new Test("zxc"));
+            lst.Add(new Test("wer"));
+            lst.Add(new Test("sdf"));
+            lst.Add(new Test("xcv"));
+            lst.Add(new Test("ert"));
+            lst.Add(new Test("dfg"));
+            lst.Add(new Test("cvb"));
+            lst.SelectionChanging += LstOnSelectionChanging;
+            lst.SelectionChanged += LstOnSelectionChanged;
 
 
-            //lst.SetSelectedToFirst();
-            //lst.SetSelectedToLast();
-            //lst.SetSelectedTo(lst[3]);
-            //lst.SetSelectedToId(0);
-            //lst.SetSelectedToPosition(5);
-            ////lst.SelectedItem = lst[3];
-            ////lst.SelectedItem = lst[8];
+            lst.SetSelectedToFirst();
+            lst.SetSelectedToLast();
+            lst.SetSelectedTo(lst[3]);
+            lst.SetSelectedToId(0);
+            lst.SetSelectedToPosition(5);
+            lst.SelectedItem = lst[3];
+            lst.SelectedItem = lst[8];
 
-            ////lst.AddSelected(lst[0]);
-            ////lst.AddSelected(lst[1]);
-            ////lst.RemoveSelected(lst[8]);
-            ////lst.RemoveSelected(lst[1]);
-            ////lst.ClearSelection();
-            ////lst.RemoveSelected(lst[8]);
+            lst.AddSelected(lst[0]);
+            lst.AddSelected(lst[1]);
+            lst.RemoveSelected(lst[8]);
+            lst.RemoveSelected(lst[1]);
+
+            lst.SetSelectedToFirst();
+            lst.SetSelectedToLast();
+            lst.SetSelectedTo(lst[3]);
+            lst.SetSelectedToId(0);
+            lst.SetSelectedToPosition(5);
+            lst.SelectedItem = lst[3];
+            lst.SelectedItem = lst[8];
+            lst.SelectedItem = null;
+            lst.ClearSelection();
+            lst.RemoveSelected(lst[8]);
 
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
@@ -64,15 +73,15 @@ namespace AvaloniaTreeTabUiTest
 
             base.OnFrameworkInitializationCompleted();
         }
-
-        private void LstOnSelectionChanged(object sender, IList<Test>? addeditems, IList<Test>? removeditems)
-        {
-            
-        }
-
-        private bool LstOnSelectionChanging(object sender, IList<Test>? addeditems, IList<Test>? removeditems)
+        
+        private bool LstOnSelectionChanging(ObservableCollectionWithSelectedItem<Test> sender, IList<Test>? addeditems, IList<Test>? removeditems)
         {
             return true;
+        }
+
+        private void LstOnSelectionChanged(ObservableCollectionWithSelectedItem<Test> sender, IList<Test>? addeditems, IList<Test>? removeditems)
+        {
+            
         }
     }
 
