@@ -8,9 +8,15 @@
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <AvaloniaResource Include="Assets\**" />
-    <Folder Include="Extensions\" />
+    <AvaloniaXaml Remove="Extensions\**" />
+    <AvaloniaXaml Remove="Models\**" />
+    <Compile Remove="Extensions\**" />
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Extensions\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Extensions\**" />
+    <None Remove="Models\**" />
     <None Remove=".gitignore" />
   </ItemGroup>
   <ItemGroup>
