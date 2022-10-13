@@ -16,6 +16,22 @@ namespace AvaloniaTreeTabUiTest.ViewModels
 
         public RefBooksViewModel()
         {
+            Title      = "null";
+            AnswersCmd = ReactiveCommand.Create(OnAnswers);
+        }
+        public RefBooksViewModel(int q)
+        {
+            Title      = "int";
+            AnswersCmd = ReactiveCommand.Create(OnAnswers);
+        }
+        public RefBooksViewModel(string q)
+        {
+            Title      = "string";
+            AnswersCmd = ReactiveCommand.Create(OnAnswers);
+        }
+        public RefBooksViewModel(string q, int w)
+        {
+            Title      = "String Int";
             AnswersCmd = ReactiveCommand.Create(OnAnswers);
         }
 
