@@ -75,7 +75,7 @@ namespace AvaloniaTreeTabUiTest
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
                 var wnd  = new TabWindow();
-                var root = new ViewNode(new MainViewModel());
+                var root = new ViewNodeBase(new MainViewModel());
                 var vm   = new TabWindowViewModel(wnd, root.ViewModel);
                 wnd.DataContext    = vm;
                 TabViewControl.Init(vm, root);

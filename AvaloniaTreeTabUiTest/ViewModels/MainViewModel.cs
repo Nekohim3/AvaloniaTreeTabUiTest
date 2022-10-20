@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reactive;
 using System.Text;
 using System.Threading.Tasks;
+using Avalonia.Controls;
 using AvaloniaTreeTabWindowManager.Utils.TabControl;
 using AvaloniaTreeTabWindowManager.ViewModels;
 using ReactiveUI;
@@ -17,7 +18,7 @@ namespace AvaloniaTreeTabUiTest.ViewModels
         public ReactiveCommand<Unit, Unit> SMSCmd      { get; }
 
 
-        public MainViewModel()
+        public MainViewModel(TabWindowViewModel wndVm) : base(wndVm)
         {
             RefBooksCmd = ReactiveCommand.Create(OnRefBooks);
             STSiKCmd    = ReactiveCommand.Create(OnSTSiK);
@@ -36,7 +37,7 @@ namespace AvaloniaTreeTabUiTest.ViewModels
 
         private void OnRefBooks()
         {
-            this.AddAndSwitchView(() => new RefBooksViewModel());
+            //this.AddAndSwitchView(() => new RefBooksViewModel());
         }
     }
 }
